@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.batchmates.android.crazyviews.MainActivity">
+
+    <com.batchmates.android.crazyviews.CustomLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:sempai="true"
+        app:funTime="true"
+        android:layout_height="match_parent">
+
+        <com.batchmates.android.crazyviews.TextFlasher
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="super"
+            app:duration="500"
+            app:fade="true" />
+
+        <com.batchmates.android.crazyviews.CustomButton
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="dont Touch me" />
+    </com.batchmates.android.crazyviews.CustomLayout>
+</LinearLayout>
