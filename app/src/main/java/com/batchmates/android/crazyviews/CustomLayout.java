@@ -3,8 +3,12 @@ package com.batchmates.android.crazyviews;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -44,6 +48,14 @@ public class CustomLayout extends LinearLayout {
 
     private void noticeMe() {
         setBackgroundResource(R.drawable.embarassed);
+    }
+
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        Toast.makeText(this.getContext(), "Gigle dont touch my button", Toast.LENGTH_SHORT).show();
+        Log.d("TOUCH", "Touched View");
+        return false;
     }
 
     private void startFunAnimation()

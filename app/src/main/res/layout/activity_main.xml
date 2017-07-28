@@ -17,7 +17,9 @@
         <com.batchmates.android.crazyviews.TextFlasher
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="super"
+            android:textSize="30sp"
             app:duration="500"
             app:fade="true" />
 
